@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby.exe
+APP_PATH = File.expand_path("../config/application", __dir__)
+ARGV << "--port=4000" if ARGV.first == "server"
+require_relative "../config/boot"
+require "rails/commands"
+
